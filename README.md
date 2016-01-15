@@ -8,7 +8,11 @@ Enable CORS - http://enable-cors.org/server_aspnet.html
 ##Third Party Site
 Copy and paste the script tag below and place it before the CLOSING < / body > tag
 
-
+```
+<!-- Corporate Header & Footer -->
 <script src="//www.altair.com/altair-header-footer/altair-global-012016.js"></script>
 
+<!-- Third Party Site Overrides -->
 <script src="//www.altair.com/altair-header-footer/altair-taleo-012016.js"></script>
+
+```
