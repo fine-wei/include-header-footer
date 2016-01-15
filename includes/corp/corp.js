@@ -1,13 +1,12 @@
-
-
 /*
 ####################################################################
-Start Custom Scripts -----------------------------------------------
+Corp Scripts -----------------------------------------------
 ####################################################################
 */
 
 $(document).ready(function() {
 
+	// Give the body a class so that you can write styles to target the page
 	$("body").addClass('altair');
 
 	// Add placeholders for header and footer html
@@ -15,7 +14,7 @@ $(document).ready(function() {
 	$("body").append('<div id="altairFooter"></div>');
 
 	// load header html
-	$( "#altairHeader" ).load( "//www.altair.com/altair-header-footer/includes/header-nav.html?v=1", function() {
+	$( "#altairHeader" ).load( "//www.altair.com/include-header-footer/includes/corp/header.html?v=1", function() {
 		console.log( "header loaded" );
 
 		// adds hover state to menu items
@@ -33,23 +32,12 @@ $(document).ready(function() {
 	});
 
 	// includes/footer-nav.html
-
-	$( "#altairFooter" ).load( "//www.altair.com/altair-header-footer/includes/footer-nav.html?v=1", function() {
+	$( "#altairFooter" ).load( "//www.altair.com/include-header-footer/includes/corp/footer.html?v=1", function() {
 			console.log( "footer loaded" );
 	});
+
 	// load custom styles and scripts
-	$("head").append('<link rel="stylesheet" href="//www.altair.com/altair-header-footer/includes/altair.css" type="text/css"/>');
-
-
-
-
-
-
-
-
-
-
-
+	$("head").append('<link rel="stylesheet" href="//www.altair.com/include-header-footer/includes/corp/corp.css" type="text/css"/>');
 
 
 //END DOC READY
@@ -58,38 +46,19 @@ $(document).ready(function() {
 
 $(window).load(function() {
 
-setTimeout(function() {
-   	/* PRODUCT IMAGERY NAVIGATION CODE */
-    /* ----------------------------------------- */
+		setTimeout(function() {
 
+					// When enter is hit submit form
+					$("#SearchTB").keyup(function(event){
+					    if(event.keyCode == 13){
+					        $("#SearchBtn").click();
+					        //alert("Enter");
+					        var q = $(this).val();
+					     window.location = 'http://www.altair.com/SearchResults.aspx?q=' + q +'%20site:www.altair.com';
+					    }
+					});
 
-
-$("#SearchTB").keyup(function(event){
-    if(event.keyCode == 13){
-        $("#SearchBtn").click();
-        //alert("Enter");
-        var q = $(this).val();
-     window.location = 'http://www.altair.com/SearchResults.aspx?q=' + q +'%20site:www.altair.com';
-    }
-
-   
-});
-
-
-
-}, 2000);
-
-
-
-
-
-
-
-
-
-
-
-
+			}, 2000);
 
 
 

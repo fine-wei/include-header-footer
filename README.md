@@ -10,9 +10,9 @@ Copy and paste the script tag below and place it before the CLOSING < / body > t
 
 ```
 <!-- Corporate Header & Footer -->
-<script src="//www.altair.com/altair-header-footer/altair-global-012016.js"></script>
+<script src="//www.altair.com/include-header-footer/altair-global-012016.js"></script>
 
 <!-- Third Party Site Overrides -->
-<script src="//www.altair.com/altair-header-footer/altair-taleo-012016.js"></script>
+<script src="//www.altair.com/include-header-footer/altair-taleo-012016.js"></script>
 
 ```
