@@ -4,6 +4,8 @@ Include Header and Footer
 -----------------------------------------------
 By: Jacob Lett
 https://github.com/JacobLett
+Forked by: Fine-Wei Lin
+https://github.com/fine-wei/include-header-footer
 
 Handshake with third party site to see if they have jQuery and if not load it. Then load jquery dependend code used to build out the header and footer files.
 
