@@ -19,13 +19,13 @@ $(document).ready(function() {
 
 		// adds hover state to menu items
 		$(".menu_hover_item").hover(function () {
-	        $('#top_nav_product_image').attr('src', $(this).attr('data-thumbnail'));
+	        $('#top_nav_product_image').attr('src', $(this).attr('thumbnail'));
 	        //$('#top_nav_product_name').text($(this).text());
 	        $('#top_nav_product_description').html($(this).attr('data-title').replace('\n', '<br />'));
 	    });
 
 	    $(".menu_hover_item1").hover(function () {
-	        $('#top_nav_product_image1').attr('src', $(this).attr('data-thumbnail'));
+	        $('#top_nav_product_image1').attr('src', $(this).attr('thumbnail'));
 	        //$('#top_nav_product_name').text($(this).text());
 	        $('#top_nav_product_description1').html($(this).attr('data-title').replace('\n', '<br />'));
 	    });
