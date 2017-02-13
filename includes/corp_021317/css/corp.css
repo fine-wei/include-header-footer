@@ -1,0 +1,252 @@
+﻿/* ==========================================================================
+   Base styles: defaults
+   ========================================================================== */
+.corp {color:#222;font-size:100%;height:100%;line-height:1.4}
+.corp *, .corp :before, .corp :after{-moz-box-sizing:border-box;box-sizing:border-box}
+.corp {background:#504f4f;font-family:"Open Sans", sans-serif}
+.corp ::-moz-selection{background:#0389b4;color:#fff;text-shadow:none}
+.corp ::selection{background:#0389b4;color:#fff;text-shadow:none}
+.corp hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+.corp audio, .corp canvas, .corp iframe, .corp img, .corp svg, .corp video{vertical-align:middle}
+.corp fieldset, .corp figure{border:0;margin:0;padding:0}
+.corp textarea{resize:vertical}
+
+
+/* ==========================================================================
+   Font weights available: 400 - Normal, 600 - Semibold, 700 - Bold
+   ========================================================================== */
+.corp h1, .corp h2, .corp h3, .corp h4, .corp h5, .corp h6, .corp p{margin:0;padding:0}
+.corp h1, .corp h2, .corp h3, .corp h4, .corp h5, .corp h6{font-weight:700}
+
+
+/* ==========================================================================
+   GLOBALS - Shared Elements            Altair Corporate 2017 - Media Genesis
+   ========================================================================== */
+.corp #container{background:#fff}
+.corp #altair-overlay{background:rgba(0, 0, 0, 0.7);cursor:pointer;display:none;height:100vh;left:0;position:fixed;top:0;width:100vw;z-index:50}
+.corp #altair-overlay .holder{height:400px;margin-top:-250px;overflow:hidden;position:absolute;top:50%;width:100%}
+.corp #altair-overlay .wistia_embed{display:none;left:0;opacity:1;position:absolute;top:0}
+.corp .holder{margin:0 auto;width:1300px}
+.corp .global-btn, .corp #splash .read-more{color:#fff;display:inline-block;height:45px;line-height:45px;margin-top:30px;padding:0 15px;text-decoration:none}
+.corp .txt-center{text-align:center}
+.corp .txt-right{text-align:right}
+.corp input[type="submit"], .corp .global-btn{background:#00a9e0;-webkit-transition:background .12s linear;-moz-transition:background .12s linear;-o-transition:background .12s linear;transition:background .12s linear}
+.corp .splash-link ~ .holder .read-more{background:#00a9e0}
+.corp input[type="submit"]:hover, .corp .global-btn:hover, .corp .splash-link:hover ~ .holder .read-more{background:#0389b4}
+
+
+/* ==========================================================================
+   SECTION - Header                     Altair Corporate 2017 - Media Genesis
+   ========================================================================== */
+.corp header#corp{background:#FFF;border-bottom:1px solid #5E5C5C;box-shadow:0 0 4px 0 rgba(0, 0, 0, 0.7);height:92px;left:0;position:fixed;top:0;width:100%;z-index:100}
+.corp header#corp #corporate{background:#5E5C5C;color:#FFF;cursor:default;height:40px;width:100%}
+.corp header#corp section{margin:0 auto;position:relative;width:1024px}
+.corp header#corp h1{background:url(../img/bg_corporate.png) no-repeat 0 0;float:left;height:29px;margin:5px 0 6px;width:107px}
+.corp header#corp h1 a{display:block;height:100%;width:100%}
+.corp header#corp h1 a:hover{text-decoration:none}
+.corp #mobile-menu, .corp #mobile-toggler{display:none}
+.corp .logo{display:none;float:left;height:54px;width:200px}
+.corp .languages{cursor:pointer;float:right;font-size:11px;height:40px;margin-left:10px;padding:10px 0 0;position:relative;width:180px}
+.corp .languages a{display:block;color:#FFF;height:29px;width:170px}
+.corp .languages a span{padding-left:8px}
+.corp .languages div.drop{background-color:#f2f2f2;background-color:rgba(255, 255, 255, 0.96);border:1px solid #818285;-webkit-box-shadow:0 0 4px 2px rgba(0, 0, 0, 0.25);box-shadow:0 0 4px 2px rgba(0, 0, 0, 0.25);cursor:pointer;left:-999em;min-height:50px;padding:5px 0 10px;position:absolute;text-align:left;top:5px;width:168px;z-index:10}
+.corp .languages:hover div.drop{left:0}
+.corp .languages:hover div.drop a{background-image:url(../img/bg_flag.png);background-repeat:no-repeat;color:#414042;height:25px;padding:5px 10px 0 40px;text-decoration:none;width:100%}
+.corp .languages > a{background-image:url(../img/bg_flag.png);background-repeat:no-repeat;padding-left:40px;padding-top:5px;height:20px;text-align:left}
+.corp .languages:hover div.drop a:hover{background-color:#e0e0e0}
+.corp a.flag_aus{background-position:10px 2px}
+.corp a.flag_bra{background-position:10px -23px}
+.corp a.flag_can{background-position:10px -48px}
+.corp a.flag_chi{background-position:10px -73px}
+.corp a.flag_fra{background-position:10px -98px}
+.corp a.flag_ger{background-position:10px -123px}
+.corp a.flag_ind{background-position:10px -148px}
+.corp a.flag_ita{background-position:10px -198px}
+.corp a.flag_jap{background-position:10px -223px}
+.corp a.flag_kor{background-position:10px -248px}
+.corp a.flag_mex{background-position:10px -273px}
+.corp a.flag_zaf{background-position:10px -298px}
+.corp a.flag_swe{background-position:10px -323px}
+.corp a.flag_uki{background-position:10px -348px}
+.corp a.flag_usa{background-position:10px -373px}
+.corp a.flag_spa{background-position:10px -397px}
+.corp a.flag_ase{background-position:10px -421px}
+.corp .searchbox{height:40px;float:right;width:250px}
+.corp .sb-search{float:right;height:40px;min-width:40px;position:relative;overflow:hidden;-webkit-transition:width .3s;-moz-transition:width .3s;transition:width .3s;width:0;-webkit-backface-visibility:hidden}
+.corp .sb-search-input{background:#ddd;border:none;color:#58595b;font-family:inherit;font-size:1.25rem;height:40px;outline:none;margin:0;padding:0 40px 0 10px;position:absolute;right:0;top:0;width:100%;z-index:10}
+.corp input[type="text"].sb-search-input{-webkit-appearance:none;-webkit-border-radius:0}
+.corp .sb-search-input::-webkit-input-placeholder{color:#777}
+.corp .sb-search-input:-moz-placeholder{color:#777}
+.corp .sb-search-input::-moz-placeholder{color:#777}
+.corp .sb-search-input:-ms-input-placeholder{color:#777}
+.corp .sb-icon-search, .corp .sb-search-submit{cursor:pointer;display:block;height:40px;line-height:40px;margin:0;padding:0;position:absolute;text-align:center;right:0;top:0;width:40px}
+.corp .sb-search-submit{background:#fff;opacity:0;color:transparent;border:none;outline:none;z-index:-1}
+.corp .sb-icon-search{background:#5e5c5c;color:#fff;font-family:"FontAwesome";font-size:1.375rem;font-style:normal;font-variant:normal;font-weight:400;speak:none;text-transform:none;z-index:90;-webkit-font-smoothing:antialiased}
+.corp .sb-icon-search:before{content:"\f002"}
+.corp .sb-search.sb-search-open, .corp .no-js .sb-search{width:100%}
+.corp .sb-search.sb-search-open .sb-icon-search, .corp .no-js .sb-search .sb-icon-search{background:#2b2929;color:#fff;z-index:11}
+.corp .sb-search.sb-search-open .sb-search-submit, .corp .no-js .sb-search .sb-search-submit{z-index:90}
+.corp nav ul{list-style:none;margin:0;padding:0}
+.corp nav li{float:left}
+.corp nav#corp ul{display:none;float:left;padding:0 0 0 10px}
+.corp nav#corp li{font-size:12px}
+.corp nav#corp li a{border-left:1px solid #5E5C5C;border-right:1px solid #5E5C5C;border-top:1px solid #5E5C5C;color:#FFF;display:inline-block;height:23px;margin-top:5px;padding:10px 10px 0;text-decoration:none}
+.corp nav#corp li:hover a{background:#FFF;background:rgba(255, 255, 255, 0.9);border-left:1px solid #000;border-right:1px solid #000;border-top:1px solid #000;color:#005596}
+.corp nav#corp li:hover a.nodrop{background:#5E5C5C;border-left:1px solid #5E5C5C;border-right:1px solid #5E5C5C;border-top:1px solid #5E5C5C;color:#FFF}
+.corp nav#corp li div.overlay{background:#EFEFEF;color:#000;font-size:12px;height:1px;left:0;padding:0 10px;position:absolute;top:-1px;width:auto;z-index:100}
+.corp nav#corp li div.dropdown{background:#FFF;background:rgba(255, 255, 255, 0.9);border:1px solid #000;cursor:pointer;float:left;left:-999em;padding:0 0 5px;position:absolute;width:173px;z-index:50}
+.corp nav#corp li div.dropdown a{background:none;border:none;color:#414042;display:block;font-size:11px;height:auto;min-height:16px;padding:7px 10px 5px;width:153px}
+.corp nav#corp li:hover div.dropdown{left:auto;top:39px}
+.corp nav#corp li div.dropdown a:hover{background:#005596;color:#FFF}
+.corp nav#site li{margin-right:5px}
+.corp nav#site li a{border-left:1px solid #FFF;border-right:1px solid #FFF;border-top:1px solid #FFF;color:#58595b;display:block;font-size:20px;height:39px;margin:5px 0 0;padding:5px 18px 0;text-align:center;text-decoration:none}
+.corp nav#site li:hover a{background:#FFF;background:rgba(255, 255, 255, 0.9);border-left:1px solid #A0A1A3;border-right:1px solid #A0A1A3;border-top:1px solid #A0A1A3;box-shadow:0 0 4px 0 rgba(0, 0, 0, 0.25);color:#005596}
+.corp nav#site li.single:hover a{border-left:1px solid #FFF;border-right:1px solid #FFF;border-top:1px solid #FFF}
+.corp nav#site li div.overlay, .corp nav#site li div.nodropcols div.overlay{background:#FFF;color:#000;font-size:20px;height:10px;left:0;overflow:hidden;padding:0 18px;position:absolute;top:-6px;width:auto;z-index:100}
+.corp nav#site li.resource div.dropdown div.overlay{left:150px}
+.corp nav#site li.support div.dropdown div.overlay{left:60px}
+.corp nav#site li div.dropdown{background:#FFF;background:rgba(255, 255, 255, 0.96);border:1px solid #A0A1A3;box-shadow:0 0 4px 0 rgba(0, 0, 0, 0.25);cursor:pointer;float:left;left:-999em;padding:15px 0;position:absolute;width:239px;z-index:50}
+.corp nav#site li div.software{width:400px;padding:0}
+.corp nav#site li div.services{width:400px;padding:0}
+.corp nav#site li.lefttab{width:103px}
+.corp .it-IT nav#site li.lefttab, .corp .es-ES nav#site li.lefttab, .corp .es-MX nav#site li.lefttab{width:185px}
+.corp nav#site li.lefttab div.dropdown{width:184px}
+.corp .it-IT nav#site li.lefttab div.dropdown, .corp .es-ES nav#site li.lefttab div.dropdown, .corp .es-MX nav#site li.lefttab div.dropdown{width:266px}
+.corp nav#site li.lefttab:hover div.dropdown{margin-left:-81px}
+.corp nav#site li.lefttab div.dropdown a{text-align:right}
+.corp nav#site li.lefttab div.dropdown div.overlay{left:auto;right:0;width:101px}
+.corp .it-IT nav#site li.lefttab div.dropdown div.overlay, .corp .es-ES nav#site li.lefttab div.dropdown div.overlay, .corp .es-MX nav#site li.lefttab div.dropdown div.overlay{width:147px}
+.corp nav#site li.products div.dropdown{padding:15px 0 0}
+.corp nav#site li.resource div.dropdown{width:435px}
+.corp nav#site li.support div.dropdown{width:280px}
+.corp nav#site li div.dropdown.nodropcols{width:180px}
+.corp nav#site li div.dropdown div.dropcols.services01 a.menu_hover_item1.second_level{font-size:12px;padding-left:25px}
+.corp nav#site li div.dropdown a{background:none;border:none;box-shadow:none;color:#414042;display:block;font-size:16px;height:auto;line-height:20px;margin:0;min-height:10px;padding:5px 18px;text-align:left;width:auto}
+.corp nav#site li div.dropdown a:hover{background:#005596;color:#FFF}
+.corp nav#site li div.dropdown a.normal{padding:0}
+.corp nav#site li:hover div.dropdown{left:auto;margin-left:0;top:44px}
+.corp nav#site li.resource:hover div.dropdown{margin-left:-150px}
+.corp nav#site li.support:hover div.dropdown{margin-left:-60px}
+.corp nav#site li:hover div.dropdown.nodropcols{margin-left:0;padding:8px 0}
+.corp nav#site a#CareerLink{font-weight:700}
+.corp div.dropcols{float:left;padding:15px 0;margin:0;overflow:visible;width:190px}
+.corp div.dropcols.software01, .corp div.dropcols.services01{padding:15px 0}
+.corp div.dropcols.software02, .corp div.dropcols.services02{background:url(../images/bg-nav-darker.png) repeat-x 0 1px;background:url(../img/bg_product_nav.png) no-repeat, -moz-linear-gradient(top, rgba(255, 255, 255, 0) 4%, rgba(255, 255, 255, 0.01) 5%, rgba(218, 217, 217, 1) 90%);background:url(../img/bg_product_nav.png) no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(4%, rgba(255, 255, 255, 0)), color-stop(5%, rgba(255, 255, 255, 0.01)), color-stop(90%, rgba(218, 217, 217, 1)));background:url(../img/bg_product_nav.png) no-repeat, -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 4%, rgba(255, 255, 255, 0.01) 5%, rgba(218, 217, 217, 1) 90%);background:url(../img/bg_product_nav.png) no-repeat, -o-linear-gradient(top, rgba(255, 255, 255, 0) 4%, rgba(255, 255, 255, 0.01) 5%, rgba(218, 217, 217, 1) 90%);background:url(../img/bg_product_nav.png) no-repeat, -ms-linear-gradient(top, rgba(255, 255, 255, 0) 4%, rgba(255, 255, 255, 0.01) 5%, rgba(218, 217, 217, 1) 90%);background:url(../img/bg_product_nav.png) no-repeat, linear-gradient(to bottom, rgba(255, 255, 255, 0) 4%, rgba(255, 255, 255, 0.01) 5%, rgba(218, 217, 217, 1) 90%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#dad9d9', GradientType=0);font-size:13px;min-height:200px;padding:15px 0;width:208px}
+.corp div.dropcols.services02{min-height:222px}
+.corp .lt-ie10 div.dropcols.software02, .corp .lt-ie10 div.dropcols.services02{border-left:1px solid #818284;width:209px}
+.corp div.dropcols.software02 figure img, .corp div.dropcols.services02 figure img{margin-left:20px}
+.corp div.dropcols.software02 .descr, .corp div.dropcols.services02 .descr{color:#5e5c5d;font-size:14px;line-height:18px;padding:10px 20px 0;text-align:center}
+#altairHeader { margin-bottom: 100px; }
+
+/* ==========================================================================
+   Mobile Menu Styles
+   ========================================================================== */
+.corp #mobile-toggler{cursor:pointer;float:right;height:50px;position:relative;text-align:center;-webkit-transform:rotate(0deg);-moz-transform:rotate(0deg);-o-transform:rotate(0deg);transform:rotate(0deg);-webkit-transition:.5s ease-in-out;-moz-transition:.5s ease-in-out;-o-transition:.5s ease-in-out;transition:.5s ease-in-out;width:30px}
+.corp #mobile-toggler span{background:#f4f4f4;border-radius:9px;display:block;height:4px;left:0;opacity:1;position:absolute;-webkit-transform:rotate(0deg);-moz-transform:rotate(0deg);-o-transform:rotate(0deg);transform:rotate(0deg);-webkit-transition:.25s ease-in-out;-moz-transition:.25s ease-in-out;-o-transition:.25s ease-in-out;transition:.25s ease-in-out;width:100%}
+.corp #mobile-toggler span:nth-child(1){top:12px}
+.corp #mobile-toggler span:nth-child(2), .corp #mobile-toggler span:nth-child(3){top:23px}
+.corp #mobile-toggler span:nth-child(4){top:34px}
+.corp #mobile-toggler.open span:nth-child(1){left:50%;top:18px;width:0}
+.corp #mobile-toggler.open span:nth-child(2){-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);-o-transform:rotate(45deg);transform:rotate(45deg)}
+.corp #mobile-toggler.open span:nth-child(3){-webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);-o-transform:rotate(-45deg);transform:rotate(-45deg)}
+.corp #mobile-toggler.open span:nth-child(4){left:50%;top:18px;width:0}
+.corp #mobile-menu{background:#fff;border-right:2px solid #e8edf0;height:calc(100vh - 50px);left:0;position:fixed;top:50px;-webkit-transform:translate3d(-100%, .corp 0, .corp 0);transform:translate3d(-100%, .corp 0, .corp 0);-webkit-transition:-webkit-transform .3s;transition:transform .3s;width:100%;z-index:1000}
+.corp #mobile-menu.menu-opened{-webkit-transform:translate3d(0, .corp 0, .corp 0);transform:translate3d(0, .corp 0, .corp 0)}
+.corp .menu-wrap{bottom:0;overflow:hidden;position:absolute;top:0;width:100%}
+.corp .menu-level{height:100%;left:0;list-style-type:none;margin:0;padding:0;position:absolute;top:0;overflow:hidden;overflow-y:scroll;width:100%}
+.corp .menu-level ul{margin:0;padding:0}
+.corp .menu-item{background:#fff;cursor:pointer;display:block;width:100%}
+.corp .menu-item:last-child{margin-bottom:80px}
+.corp .menu-item a{border-bottom:2px solid #e8edf0;color:#00a9e0;display:block;font-size:1.25rem;line-height:1.2;padding:.9em 1em;position:relative;text-decoration:none}
+.corp .menu-item a:hover{background-color:#e0e0e0;color:#222}
+.corp .menu-item a.root-menu{position:relative}
+.corp .menu-item a.root-menu:after{color:#666;content:"\f078";font-family:"FontAwesome";position:absolute;right:20px;top:18px}
+.corp .menu-item a.root-menu.open:after{content:"\f077"}
+.corp .menu-item ul{display:none}
+.corp .menu-item ul a{border-bottom:none;color:#5e5c5c;font-size:1rem;padding-left:50px}
+.corp .menu-item ul li:last-child a{border-bottom:2px solid #e8edf0}
+.corp li a[class*="flag"]{background-image:url(../images/bg_mobile_flag.png);background-repeat:no-repeat;padding:.9em 1em .9em 3.2em}
+.corp .menu-item ul a[class*="flag"]{padding:.9em 1em .9em 5.5em}
+.corp li a.root-menu.flag_zaf{background-position:-20px -22px}
+.corp li a.root-menu.flag_ase{background-position:-20px -120px}
+.corp li a.root-menu.flag_aus{background-position:-20px -222px}
+.corp li a.root-menu.flag_bra{background-position:-20px -326px}
+.corp li a.root-menu.flag_can{background-position:-20px -430px}
+.corp li a.root-menu.flag_chi{background-position:-20px -534px}
+.corp li a.root-menu.flag_fra{background-position:-20px -638px}
+.corp li a.root-menu.flag_ger{background-position:-20px -742px}
+.corp li a.root-menu.flag_ind{background-position:-20px -846px}
+.corp li a.root-menu.flag_ita{background-position:-20px -950px}
+.corp li a.root-menu.flag_jap{background-position:-20px -1053px}
+.corp li a.root-menu.flag_kor{background-position:-20px -1158px}
+.corp li a.root-menu.flag_mex{background-position:-20px -1262px}
+.corp li a.root-menu.flag_spa{background-position:-20px -1364px}
+.corp li a.root-menu.flag_swe{background-position:-20px -1466px}
+.corp li a.root-menu.flag_uki{background-position:-20px -1570px}
+.corp li a.root-menu.flag_usa{background-position:-20px -1673px}
+.corp .menu-item a.flag_zaf{background-position:8px -28px}
+.corp .menu-item a.flag_ase{background-position:8px -127px}
+.corp .menu-item a.flag_aus{background-position:8px -229px}
+.corp .menu-item a.flag_bra{background-position:8px -333px}
+.corp .menu-item a.flag_can{background-position:8px -437px}
+.corp .menu-item a.flag_chi{background-position:8px -541px}
+.corp .menu-item a.flag_fra{background-position:8px -645px}
+.corp .menu-item a.flag_ger{background-position:8px -749px}
+.corp .menu-item a.flag_ind{background-position:8px -853px}
+.corp .menu-item a.flag_ita{background-position:8px -957px}
+.corp .menu-item a.flag_jap{background-position:8px -1060px}
+.corp .menu-item a.flag_kor{background-position:8px -1165px}
+.corp .menu-item a.flag_mex{background-position:8px -1269px}
+.corp .menu-item a.flag_spa{background-position:8px -1371px}
+.corp .menu-item a.flag_swe{background-position:8px -1473px}
+.corp .menu-item a.flag_uki{background-position:8px -1577px}
+.corp .menu-item a.flag_usa{background-position:8px -1680px}
+
+
+/* ==========================================================================
+   SECTION - Contacts                   Altair Corporate 2017 - Media Genesis
+   ========================================================================== */
+.corp #contacts{background:#5e5c5c;color:#fff;min-height:440px;width:100%}
+.corp .subscription{border-bottom:1px solid #737373;min-height:190px;padding:30px 0;text-align:center}
+.corp .subscription h2{font-size:1.25rem;font-weight:600;text-transform:uppercase}
+.corp .subscription h3{font-size:1rem}
+.corp .subscribe-now{margin:0 auto;padding-top:28px;width:454px}
+.corp .subscribe-now input{border:1px solid #8c8b8b;box-sizing:border-box;float:left;height:46px;margin:0;padding:0;position:relative}
+.corp .subscribe-now fieldset{float:left;display:none}
+.corp .subscribe-now fieldset[data-reactid$="2"]{display:block;position:relative}
+.corp .subscribe-now fieldset label{display:none}
+.corp .subscribe-now .hs-form fieldset.form-columns-1 .input{margin-right:0}
+.corp .subscribe-now input.hs-input.invalid.error{border:1px solid red}
+.corp .subscribe-now .hs-form fieldset.form-columns-1 .hs-input[type="email"]{border-radius:0;color:#363636;font-size:.868rem;font-weight:700;padding-left:15px;width:302px}
+.corp .subscribe-now input[type="email"]::-webkit-input-placeholder{color:#363636;opacity:1;text-transform:uppercase}
+.corp .subscribe-now input[type="email"]::-moz-placeholder{color:#363636;opacity:1;text-transform:uppercase}
+.corp .subscribe-now input[type="submit"]{border-radius:0;width:152px}
+.corp .hs-error-msgs.inputs-list{list-style:none;margin:0;padding:0;position:absolute;top:-25px}
+.corp .hs-error-msgs.inputs-list label{display:block}
+.corp .divisions{display:-webkit-flex;display:flex;padding:32px 0}
+.corp .divisions img{height:15px;margin-right:8px;position:relative;top:2px;vertical-align:baseline;width:15px}
+.corp .divisions h3{cursor:default;font-size:1rem;font-weight:600;padding-bottom:4px;text-transform:uppercase}
+.corp .divisions a{color:#fff;display:inline-block;line-height:1.2;padding:4px 0;text-decoration:none}
+.corp .divisions a:hover{text-decoration:underline}
+.corp .divisions div{-webkit-flex-direction:column;flex-direction:column;-webkit-justify-content:flex-start;justify-content:flex-start;padding:0 1% 0 0;width:20%}
+.corp .divisions div ~ div{padding:0 1%}
+
+/* ==========================================================================
+   SECTION - Footer                     Altair Corporate 2017 - Media Genesis
+   ========================================================================== */
+.corp footer{background:#504f4f;color:#fff;min-height:50px;line-height:50px;width:100%}
+.corp footer a{color:#fff;text-decoration:none}
+.corp footer a:hover{text-decoration:underline}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+.corp .hidden{display:none!important}
+.corp .visuallyhidden{border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}
+.corp .visuallyhidden.focusable:active, .corp .visuallyhidden.focusable:focus{clip:auto;height:auto;margin:0;overflow:visible;position:static;width:auto}
+.corp .invisible{visibility:hidden}
+.corp .clearfix:before, .corp .clearfix:after{content:" ";display:table}
+.corp .clearfix:after{clear:both}
+.corp .floatleft { float:left; }
+.corp .floatright { float:right; }
