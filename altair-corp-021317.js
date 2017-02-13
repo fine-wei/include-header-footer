@@ -182,6 +182,6 @@ function AddScript(src, target, callback) {
 
 // JS - Load page scripts
 // Change path to globally update include path for dev and production
-var includesPath = '//admin.dev.altair.mediag.com/include-header-footer/includes/corp_021317';
+var includesPath = '//admin.altair.com/include-header-footer/includes/corp_021317';
 AddScriptHead(includesPath + '/js/modernizr-2.8.3.min.js');
 AddScriptBody(includesPath + '/js/corp.js');
