@@ -138,6 +138,38 @@
 .corp div.dropcols.software02 .descr, .corp div.dropcols.services02 .descr{color:#5e5c5d;font-size:14px;line-height:18px;padding:10px 20px 0;text-align:center}
 #altairHeader { margin-bottom: 100px; }
 
+
+/* max-width 1024px, mobile styles */
+@media only screen and (max-width: 64.000em) {
+.languages:hover div.drop{left:auto}
+.corp body.active-nav{height:100vh;position:fixed;width:100vw;z-index:0}
+.corp header#corp, .corp header#corp #corporate{height:50px}
+.corp header#corp{position:static}
+.corp header#corp section{padding:0 3%;position:relative;width:100%}
+.corp header#corp h1{background-position:0 center;height:50px;margin:0}
+.corp #corporate + section, .corp .languages{display:none}
+.corp #mobile-menu, .corp #mobile-toggler{display:block}
+.corp .searchbox{margin-right:10px;margin-top:5px;width:50%}
+.corp .subscribe-now, .corp .hs-form fieldset.form-columns-1 .hs-input, .corp .subscribe-now .hs-form fieldset.form-columns-1 .hs-input[type="email"]{width:100%}
+.corp .hs-form fieldset{max-width:none!important;width:60%}
+.corp .subscribe-now input[type="submit"]{font-size:.868rem;width:100%}
+.corp .hs_submit{float:left;width:40%}
+.corp .divisions{display:block;padding:0}
+.corp .divisions a{padding:5px 0}
+.corp .divisions h3{font-size:1.25rem;padding-bottom:5px}
+.corp .divisions div, .corp .divisions div ~ div{border-bottom:1px solid #737373;padding:20px 0;margin-bottom:20px;width:100%}
+.corp .divisions div ~ div{padding:0 0 20px}
+.corp .divisions div:last-child{border-bottom:none;margin-bottom:0}
+.corp .divisions div:last-child h3{padding-bottom:12px}
+.corp .divisions div:last-child br, .corp .divisions div:last-child span{display:none}
+.corp .divisions div:last-child a, .corp .divisions div:last-child img{line-height:1;margin:0;padding:0}
+.corp .divisions div:last-child a{display:block;float:left;margin:0 5% 0 0;text-align:center;width:10%}
+.corp .divisions div:last-child img{height:auto;width:100%}
+.corp footer{line-height:1.4;padding:14px 0}
+.corp .hs-error-msgs.inputs-list label{font-size:.875rem;text-align:left;width:280px}
+}
+
+
 /* ==========================================================================
    Mobile Menu Styles
    ========================================================================== */
@@ -150,8 +182,8 @@
 .corp #mobile-toggler.open span:nth-child(2){-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);-o-transform:rotate(45deg);transform:rotate(45deg)}
 .corp #mobile-toggler.open span:nth-child(3){-webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);-o-transform:rotate(-45deg);transform:rotate(-45deg)}
 .corp #mobile-toggler.open span:nth-child(4){left:50%;top:18px;width:0}
-.corp #mobile-menu{background:#fff;border-right:2px solid #e8edf0;height:calc(100vh - 50px);left:0;position:fixed;top:50px;-webkit-transform:translate3d(-100%, .corp 0, .corp 0);transform:translate3d(-100%, .corp 0, .corp 0);-webkit-transition:-webkit-transform .3s;transition:transform .3s;width:100%;z-index:1000}
-.corp #mobile-menu.menu-opened{-webkit-transform:translate3d(0, .corp 0, .corp 0);transform:translate3d(0, .corp 0, .corp 0)}
+.corp #mobile-menu{background:#fff;border-right:2px solid #e8edf0;height:calc(100vh - 50px);left:0;position:fixed;top:50px;-webkit-transform:translate3d(-100%, 0, 0);transform:translate3d(-100%, 0, 0);-webkit-transition:-webkit-transform .3s;transition:transform .3s;width:100%;z-index:1000}
+.corp #mobile-menu.menu-opened{-webkit-transform:translate3d(0, 0, 0);transform:translate3d(0, 0, 0)}
 .corp .menu-wrap{bottom:0;overflow:hidden;position:absolute;top:0;width:100%}
 .corp .menu-level{height:100%;left:0;list-style-type:none;margin:0;padding:0;position:absolute;top:0;overflow:hidden;overflow-y:scroll;width:100%}
 .corp .menu-level ul{margin:0;padding:0}
@@ -165,7 +197,7 @@
 .corp .menu-item ul{display:none}
 .corp .menu-item ul a{border-bottom:none;color:#5e5c5c;font-size:1rem;padding-left:50px}
 .corp .menu-item ul li:last-child a{border-bottom:2px solid #e8edf0}
-.corp li a[class*="flag"]{background-image:url(../images/bg_mobile_flag.png);background-repeat:no-repeat;padding:.9em 1em .9em 3.2em}
+.corp li a[class*="flag"]{background-image:url(../img/bg_mobile_flag.png);background-repeat:no-repeat;padding:.9em 1em .9em 3.2em}
 .corp .menu-item ul a[class*="flag"]{padding:.9em 1em .9em 5.5em}
 .corp li a.root-menu.flag_zaf{background-position:-20px -22px}
 .corp li a.root-menu.flag_ase{background-position:-20px -120px}
@@ -250,3 +282,49 @@
 .corp .clearfix:after{clear:both}
 .corp .floatleft { float:left; }
 .corp .floatright { float:right; }
+
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+/* max-width 1360px */
+@media only screen and (max-width: 85em) {
+#identity .holder, .corp #contacts .holder, .corp footer .holder{display:block;padding:0 5%;width:100%}
+}
+
+/* max-width 1330px */
+@media only screen and (max-width: 83.125em) {
+.holder{width:100%}
+}
+
+/* max-width 1024px, mobile styles */
+@media only screen and (max-width: 64.000em) {
+.corp .languages:hover div.drop{left:auto}
+.corp body.active-nav{height:100vh;position:fixed;width:100vw;z-index:0}
+.corp header#corp, .corp header#corp #corporate{height:50px}
+.corp header#corp{position:static}
+.corp header#corp section{padding:0 3%;position:relative;width:100%}
+.corp header#corp h1{background-position:0 center;height:50px;margin:0}
+.corp #corporate + section, .corp .languages{display:none}
+.corp #mobile-menu, .corp #mobile-toggler{display:block}
+.corp .searchbox{margin-right:10px;margin-top:5px;width:50%}
+.corp .subscribe-now, .corp .hs-form fieldset.form-columns-1 .hs-input, .corp .subscribe-now .hs-form fieldset.form-columns-1 .hs-input[type="email"]{width:100%}
+.corp .hs-form fieldset{max-width:none!important;width:60%}
+.corp .subscribe-now input[type="submit"]{font-size:.868rem;width:100%}
+.corp .hs_submit{float:left;width:40%}
+.corp .divisions{display:block;padding:0}
+.corp .divisions a{padding:5px 0}
+.corp .divisions h3{font-size:1.25rem;padding-bottom:5px}
+.corp .divisions div, .corp .divisions div ~ div{border-bottom:1px solid #737373;padding:20px 0;margin-bottom:20px;width:100%}
+.corp .divisions div ~ div{padding:0 0 20px}
+.corp .divisions div:last-child{border-bottom:none;margin-bottom:0}
+.corp .divisions div:last-child h3{padding-bottom:12px}
+.corp .divisions div:last-child br, .corp .divisions div:last-child span{display:none}
+.corp .divisions div:last-child a, .corp .divisions div:last-child img{line-height:1;margin:0;padding:0}
+.corp .divisions div:last-child a{display:block;float:left;margin:0 5% 0 0;text-align:center;width:10%}
+.corp .divisions div:last-child img{height:auto;width:100%}
+.corp footer{line-height:1.4;padding:14px 0}
+.corp .hs-error-msgs.inputs-list label{font-size:.875rem;text-align:left;width:280px}
+}

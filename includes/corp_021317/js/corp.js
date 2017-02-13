@@ -31,6 +31,45 @@ $(document).ready(function() {
 	    });
 
 	    new UISearch(document.getElementById('sb-search'));
+
+	    /* MOBILE ONLY - NAVIGATION TOGGLE */
+	    /* ----------------------------------------- */
+	    $("#mobile-toggler").on("click", function () {
+	        window.scrollTo(0, 0);
+	        $(this).toggleClass("open");
+	        $("#mobile-menu").toggleClass("menu-opened");
+	        $("body").toggleClass("active-nav");
+	    });
+
+	    $(".root-menu").on("click", function () {
+	        $(this).toggleClass("open");
+	        $(this).next().stop().slideToggle(400);
+	        return false;
+	    });
+
+	    //touch pagination fix on mobile, applied in css
+	    function is_touch_device() {
+	        return 'ontouchstart' in window        // works on most browsers 
+            || navigator.maxTouchPoints;       // works on IE10/11 and Surface
+	    };
+
+	    if (is_touch_device()) {
+	        $("html").addClass('touch')
+	    } else {
+	        $("html").addClass('no-touch')
+	    }
+
+	    // disable comments validation if Other selected for Interests
+	    $("#InterestedInDD").change(function () {
+	        var validator = document.getElementById('CommentsTBRFV');
+	        if ($(this).val() == "Other") {
+	            ValidatorEnable(validator, true);
+	            $("#comments_required").show();
+	        } else {
+	            ValidatorEnable(validator, false);
+	            $("#comments_required").hide();
+	        }
+	    });
 	});
 
 	// includes/footer-nav.html
@@ -44,44 +83,6 @@ $(document).ready(function() {
 	$("head").append('<link rel="stylesheet" href="' + includesPath + '/css/corp.css" type="text/css"/>');
 	$("head").append('<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i" type="text/css"/>');
 
-    /* MOBILE ONLY - NAVIGATION TOGGLE */
-    /* ----------------------------------------- */
-	$("#mobile-toggler").on("click", function () {
-	    window.scrollTo(0, 0);
-	    $(this).toggleClass("open");
-	    $("#mobile-menu").toggleClass("menu-opened");
-	    $("body").toggleClass("active-nav");
-	});
-
-	$(".root-menu").on("click", function () {
-	    $(this).toggleClass("open");
-	    $(this).next().stop().slideToggle(400);
-	    return false;
-	});
-
-    //touch pagination fix on mobile, applied in css
-	function is_touch_device() {
-	    return 'ontouchstart' in window        // works on most browsers 
-	  	|| navigator.maxTouchPoints;       // works on IE10/11 and Surface
-	};
-
-	if (is_touch_device()) {
-	    $("html").addClass('touch')
-	} else {
-	    $("html").addClass('no-touch')
-	}
-
-    // disable comments validation if Other selected for Interests
-	$("#InterestedInDD").change(function () {
-	    var validator = document.getElementById('CommentsTBRFV');
-	    if ($(this).val() == "Other") {
-	        ValidatorEnable(validator, true);
-	        $("#comments_required").show();
-	    } else {
-	        ValidatorEnable(validator, false);
-	        $("#comments_required").hide();
-	    }
-	});
 
 
 //END DOC READY
